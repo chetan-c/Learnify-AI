@@ -1,0 +1,16 @@
+{
+  "name": "edu_ai_app",
+  "version": "1.0.0",
+  "description": "An AI-powered educational SaaS platform that allows users to upload PDFs, ask questions via AI, and manage subscriptions.",
+  "main": "analyze_ai_responses.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdf2json": "^4.0.2",
+    "pdfjs-dist": "^5.4.624"
+  }
+}

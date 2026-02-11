@@ -1,0 +1,31 @@
+Server running on port 5000
+MongoDB Connected: 127.0.0.1
+[0mPOST /api/auth/register [32m201[0m 135.744 ms - 308[0m
+[PDF Parser] Starting extraction for: uploads\1769945247809-bio.pdf
+[PDF Parser] File read successful. Buffer size: 592 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 118 chars
+[KB Service] Starting extraction. Text sample size: 118 chars
+[KB Service] Calling Gemini...
+[KB Service] CRITICAL ERROR: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[0mPOST /api/pdf/upload [32m201[0m 1633.176 ms - 801[0m
+[AI Chat] User Question: "What process is mentioned in the text?"
+[AI Controller] Fetching PDF context for ID: 697f38a15dca78f654744d4f
+[AI Controller] PDF found. Extracted text length: 118 chars
+[AI Chat] Generating prompt with context window...
+[AI Chat] Calling Gemini API...
+[AI Chat] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[0mPOST /api/ai/ask [31m500[0m 295.219 ms - 433[0m
+[AI MCQs] Request - Difficulty: easy, Count: 2
+[AI Controller] Fetching PDF context for ID: 697f38a15dca78f654744d4f
+[AI Controller] PDF found. Extracted text length: 118 chars
+[AI MCQs] Calling Gemini...
+[AI MCQs] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[0mPOST /api/ai/generate-mcqs [31m500[0m 201.406 ms - 350[0m
+[AI Notes] Request - Type: summary
+[AI Controller] Fetching PDF context for ID: 697f38a15dca78f654744d4f
+[AI Controller] PDF found. Extracted text length: 118 chars
+[AI Notes] Calling Gemini...
+[AI Notes] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[0mPOST /api/ai/generate-notes [31m500[0m 196.614 ms - 350[0m
+^C

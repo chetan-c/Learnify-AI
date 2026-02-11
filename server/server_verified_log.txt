@@ -1,0 +1,63 @@
+Server running on port 5000
+MongoDB Connected: 127.0.0.1
+[0mPOST /api/auth/register [32m201[0m 202.822 ms - 310[0m
+[PDF Parser] Starting extraction for: uploads\1769941799629-solarsystem.pdf
+[PDF Parser] File read successful. Buffer size: 636 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 121 chars
+[KB Service] Starting extraction. Text sample size: 121 chars
+[KB Service] Calling Gemini...
+[KB Service] CRITICAL ERROR: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+[0mPOST /api/pdf/upload [32m201[0m 1678.636 ms - 1015[0m
+[AI MCQs] Request - Difficulty: easy, Count: 3
+[AI Controller] Fetching PDF context for ID: 697f2b29540a796964676ca0
+[AI Controller] PDF found. Extracted text length: 121 chars
+[AI MCQs] Calling Gemini...
+[AI MCQs] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+[0mPOST /api/ai/generate-mcqs [31m500[0m 192.833 ms - 545[0m
+[AI Exam] Request - Duration: 15, Count: 2, Difficulty: medium
+[AI Controller] Fetching PDF context for ID: 697f2b29540a796964676ca0
+[AI Controller] PDF found. Extracted text length: 121 chars
+[AI Exam] Calling Gemini...
+[AI Exam] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+[0mPOST /api/ai/generate-exam [31m500[0m 178.764 ms - 545[0m
+[AI Notes] Request - Type: summary
+[AI Controller] Fetching PDF context for ID: 697f2b29540a796964676ca0
+[AI Controller] PDF found. Extracted text length: 121 chars
+[AI Notes] Calling Gemini...
+[AI Notes] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+[0mPOST /api/ai/generate-notes [31m500[0m 129.484 ms - 545[0m
+[AI Chat] User Question: "What are the eight planets mentioned?"
+[AI Controller] Fetching PDF context for ID: 697f2b29540a796964676ca0
+[AI Controller] PDF found. Extracted text length: 121 chars
+[AI Chat] Generating prompt with context window...
+[AI Chat] Calling Gemini API...
+[AI Chat] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+[0mPOST /api/ai/ask [31m500[0m 258.993 ms - 628[0m
+[AI Chat] User Question: "What is the capital of Japan?"
+[AI Controller] Fetching PDF context for ID: 697f2b29540a796964676ca0
+[AI Controller] PDF found. Extracted text length: 121 chars
+[AI Chat] Generating prompt with context window...
+[AI Chat] Calling Gemini API...
+[AI Chat] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+[0mPOST /api/ai/ask [31m500[0m 210.572 ms - 628[0m
+[0mPOST /api/users/avatar [32m200[0m 11.699 ms - 46[0m
+[0mPOST /api/auth/register [32m201[0m 96.328 ms - 318[0m
+[PDF Parser] Starting extraction for: uploads\1769943245658-physics.pdf
+[PDF Parser] File read successful. Buffer size: 575 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 117 chars
+[KB Service] Starting extraction. Text sample size: 117 chars
+[KB Service] Calling Gemini...
+[KB Service] CRITICAL ERROR: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+[0mPOST /api/pdf/upload [32m201[0m 1253.614 ms - 1003[0m
+[AI Chat] User Question: "What is the capital of France?"
+[AI Controller] Fetching PDF context for ID: 697f30ce540a796964676cb9
+[AI Controller] PDF found. Extracted text length: 117 chars
+[AI Chat] Generating prompt with context window...
+[AI Chat] Calling Gemini API...
+[AI Chat] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+[0mPOST /api/ai/ask [31m500[0m 176.173 ms - 628[0m
+[0mPOST /api/users/avatar [32m200[0m 8.352 ms - 46[0m
+[0mGET /api/admin/users [33m403[0m 3.871 ms - 67[0m
+^C

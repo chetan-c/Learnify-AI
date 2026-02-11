@@ -1,0 +1,210 @@
+Server running on port 5000
+MongoDB Connected: 127.0.0.1
+[0mPOST /api/auth/register [32m201[0m 156.178 ms - 307[0m
+[0mPUT /api/users/profile [32m200[0m 16.478 ms - 133[0m
+[0mGET /api/users/profile [32m200[0m 8.850 ms - 219[0m
+[PDF Parser] Starting extraction for: uploads\1769939347382-test.pdf
+[PDF Parser] File read successful. Buffer size: 496 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 40 chars
+KB Extraction Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+    at handleResponseNotOk (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async extractKnowledgeBase (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/utils/knowledgeBaseService.js:18:24)
+    at async uploadPDF (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/controllers/pdfController.js:36:22) {
+  status: 400,
+  statusText: 'Bad Request',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.ErrorInfo',
+      reason: 'API_KEY_INVALID',
+      domain: 'googleapis.com',
+      metadata: [Object]
+    },
+    {
+      '@type': 'type.googleapis.com/google.rpc.LocalizedMessage',
+      locale: 'en-US',
+      message: 'API key not valid. Please pass a valid API key.'
+    }
+  ]
+}
+[0mPOST /api/pdf/upload [32m201[0m 6366.670 ms - 415[0m
+[PDF Parser] Starting extraction for: uploads\1769939353752-test.pdf
+[PDF Parser] File read successful. Buffer size: 496 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 40 chars
+KB Extraction Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+    at handleResponseNotOk (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async extractKnowledgeBase (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/utils/knowledgeBaseService.js:18:24)
+    at async uploadPDF (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/controllers/pdfController.js:36:22) {
+  status: 400,
+  statusText: 'Bad Request',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.ErrorInfo',
+      reason: 'API_KEY_INVALID',
+      domain: 'googleapis.com',
+      metadata: [Object]
+    },
+    {
+      '@type': 'type.googleapis.com/google.rpc.LocalizedMessage',
+      locale: 'en-US',
+      message: 'API key not valid. Please pass a valid API key.'
+    }
+  ]
+}
+[0mPOST /api/pdf/upload [32m201[0m 176.039 ms - 415[0m
+[PDF Parser] Starting extraction for: uploads\1769939353930-test.pdf
+[PDF Parser] File read successful. Buffer size: 496 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 40 chars
+KB Extraction Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+    at handleResponseNotOk (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async extractKnowledgeBase (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/utils/knowledgeBaseService.js:18:24)
+    at async uploadPDF (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/controllers/pdfController.js:36:22) {
+  status: 400,
+  statusText: 'Bad Request',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.ErrorInfo',
+      reason: 'API_KEY_INVALID',
+      domain: 'googleapis.com',
+      metadata: [Object]
+    },
+    {
+      '@type': 'type.googleapis.com/google.rpc.LocalizedMessage',
+      locale: 'en-US',
+      message: 'API key not valid. Please pass a valid API key.'
+    }
+  ]
+}
+[0mPOST /api/pdf/upload [32m201[0m 155.445 ms - 415[0m
+[PDF Parser] Starting extraction for: uploads\1769939354090-test.pdf
+[PDF Parser] File read successful. Buffer size: 496 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 40 chars
+KB Extraction Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+    at handleResponseNotOk (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async extractKnowledgeBase (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/utils/knowledgeBaseService.js:18:24)
+    at async uploadPDF (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/controllers/pdfController.js:36:22) {
+  status: 400,
+  statusText: 'Bad Request',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.ErrorInfo',
+      reason: 'API_KEY_INVALID',
+      domain: 'googleapis.com',
+      metadata: [Object]
+    },
+    {
+      '@type': 'type.googleapis.com/google.rpc.LocalizedMessage',
+      locale: 'en-US',
+      message: 'API key not valid. Please pass a valid API key.'
+    }
+  ]
+}
+[0mPOST /api/pdf/upload [32m201[0m 174.160 ms - 415[0m
+[PDF Parser] Starting extraction for: uploads\1769939354269-test.pdf
+[PDF Parser] File read successful. Buffer size: 496 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 40 chars
+KB Extraction Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+    at handleResponseNotOk (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async extractKnowledgeBase (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/utils/knowledgeBaseService.js:18:24)
+    at async uploadPDF (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/controllers/pdfController.js:36:22) {
+  status: 400,
+  statusText: 'Bad Request',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.ErrorInfo',
+      reason: 'API_KEY_INVALID',
+      domain: 'googleapis.com',
+      metadata: [Object]
+    },
+    {
+      '@type': 'type.googleapis.com/google.rpc.LocalizedMessage',
+      locale: 'en-US',
+      message: 'API key not valid. Please pass a valid API key.'
+    }
+  ]
+}
+[0mPOST /api/pdf/upload [32m201[0m 198.137 ms - 415[0m
+[0mPOST /api/pdf/upload [33m429[0m 6.672 ms - 77[0m
+[0mGET /api/admin/users [33m403[0m 4.371 ms - 67[0m
+[0mGET /api/pdf [32m200[0m 5.807 ms - 1766[0m
+[0mPOST /api/auth/register [32m201[0m 193.826 ms - 314[0m
+[0mPOST /api/users/avatar [32m200[0m 8.685 ms - 46[0m
+[0mGET /uploads/avatar-1769939379130.png [32m200[0m 2.617 ms - 16[0m
+[0mGET /api/pdf [36m304[0m 10.777 ms - -[0m
+[0mGET /api/pdf [36m304[0m 12.323 ms - -[0m
+[0mGET /api/pdf [36m304[0m 9.826 ms - -[0m
+[0mPOST /api/ai/ask [31m500[0m 8708.120 ms - 545[0m
+[0mGET /api/pdf [36m304[0m 3.753 ms - -[0m
+[0mPOST /api/auth/register [32m201[0m 269.404 ms - 307[0m
+[PDF Parser] Starting extraction for: uploads\1769939711494-empty.pdf
+[PDF Parser] File read successful. Buffer size: 76 bytes
+--- PDF PARSING ERROR START ---
+File Path: uploads\1769939711494-empty.pdf
+Error Message: Invalid PDF structure.
+--- PDF PARSING ERROR END ---
+[0mPOST /api/pdf/upload [31m500[0m 14.636 ms - 59[0m
+[PDF Parser] Starting extraction for: uploads\1769939711529-valid.pdf
+[PDF Parser] File read successful. Buffer size: 503 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 47 chars
+KB Extraction Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"API_KEY_INVALID","domain":"googleapis.com","metadata":{"service":"generativelanguage.googleapis.com"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"API key not valid. Please pass a valid API key."}]
+    at handleResponseNotOk (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:432:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:401:9)
+    at async generateContent (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/node_modules/@google/generative-ai/dist/index.mjs:865:22)
+    at async extractKnowledgeBase (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/utils/knowledgeBaseService.js:18:24)
+    at async uploadPDF (file:///C:/Users/chetan/OneDrive/Documents/edu_ai_app/server/controllers/pdfController.js:36:22) {
+  status: 400,
+  statusText: 'Bad Request',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.ErrorInfo',
+      reason: 'API_KEY_INVALID',
+      domain: 'googleapis.com',
+      metadata: [Object]
+    },
+    {
+      '@type': 'type.googleapis.com/google.rpc.LocalizedMessage',
+      locale: 'en-US',
+      message: 'API key not valid. Please pass a valid API key.'
+    }
+  ]
+}
+[0mPOST /api/pdf/upload [32m201[0m 5215.439 ms - 424[0m
+[0mPOST /api/ai/ask [31m500[0m 4055.494 ms - 545[0m
+[0mGET /api/users/profile [32m200[0m 22.490 ms - 243[0m
+[0mPOST /api/auth/login [32m200[0m 198.118 ms - 339[0m
+[0mGET /api/pdf [36m304[0m 15.704 ms - -[0m
+[0mGET /uploads/avatar-1769939015919.jpeg [36m304[0m 2.399 ms - -[0m
+[0mGET /api/pdf [36m304[0m 13.451 ms - -[0m
+[0mPOST /api/ai/generate-mcqs [31m500[0m 1781.738 ms - 545[0m
+[0mPOST /api/ai/generate-exam [31m500[0m 786.095 ms - 545[0m
+[0mPOST /api/ai/generate-notes [31m500[0m 943.051 ms - 545[0m
+[0mGET /api/pdf [36m304[0m 5.782 ms - -[0m
+[0mPOST /api/ai/ask [31m500[0m 8938.564 ms - 545[0m
+[0mGET /api/pdf [36m304[0m 5.866 ms - -[0m
+[0mGET /uploads/avatar-1769939015919.jpeg [36m304[0m 4.329 ms - -[0m
+[0mPOST /api/users/avatar [32m200[0m 23.945 ms - 47[0m
+[0mGET /uploads/avatar-1769940627324.jpeg [32m200[0m 0.932 ms - 31947[0m
+[0mPOST /api/users/avatar [32m200[0m 30.164 ms - 47[0m
+[0mGET /uploads/avatar-1769940670334.jpeg [32m200[0m 0.964 ms - 262625[0m
+^C

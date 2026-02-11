@@ -1,0 +1,31 @@
+Server running on port 5000
+MongoDB Connected: 127.0.0.1
+[0mPOST /api/auth/register [32m201[0m 131.895 ms - 308[0m
+[PDF Parser] Starting extraction for: uploads\1769945504240-bio.pdf
+[PDF Parser] File read successful. Buffer size: 592 bytes
+[PDF Parser] Parser finished execution.
+[PDF Parser] Extraction successful. Text length: 118 chars
+[KB Service] Starting extraction. Text sample size: 118 chars
+[KB Service] Calling Gemini...
+[KB Service] CRITICAL ERROR: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+[0mPOST /api/pdf/upload [32m201[0m 1356.347 ms - 867[0m
+[AI Chat] User Question: "What process is mentioned in the text?"
+[AI Controller] Fetching PDF context for ID: 697f39a10c24d08492a150b7
+[AI Controller] PDF found. Extracted text length: 118 chars
+[AI Chat] Generating prompt with context window...
+[AI Chat] Calling Gemini API...
+[AI Chat] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+[0mPOST /api/ai/ask [31m500[0m 339.577 ms - 499[0m
+[AI MCQs] Request - Difficulty: easy, Count: 2
+[AI Controller] Fetching PDF context for ID: 697f39a10c24d08492a150b7
+[AI Controller] PDF found. Extracted text length: 118 chars
+[AI MCQs] Calling Gemini...
+[AI MCQs] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+[0mPOST /api/ai/generate-mcqs [31m500[0m 185.936 ms - 416[0m
+[AI Notes] Request - Type: summary
+[AI Controller] Fetching PDF context for ID: 697f39a10c24d08492a150b7
+[AI Controller] PDF found. Extracted text length: 118 chars
+[AI Notes] Calling Gemini...
+[AI Notes] Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+[0mPOST /api/ai/generate-notes [31m500[0m 199.120 ms - 416[0m
+^C
