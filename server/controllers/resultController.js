@@ -1,7 +1,7 @@
 // server/controllers/resultController.js
 import Result from '../models/Result.js';
 import PDF from '../models/PDF.js';
-import { evaluateAnswer } from '../utils/examEvaluator.js';
+import { evaluateAnswer, compareMCQAnswers } from '../utils/examEvaluator.js';
 
 // @desc    Save exam result and calculate score
 // @route   POST /api/results
@@ -39,8 +39,8 @@ export const saveResult = async (req, res) => {
                 score += awarded;
                 scoredAnswers.push({ ...userAns, isCorrect: evalResult.score >= 60, awardedPoints: awarded, eval: evalResult });
             } else {
-                // MCQ exact match
-                const isCorrect = (String(userAns.userAnswer || '').trim().toLowerCase() === String(question.answer || question.answerKey || '').trim().toLowerCase());
+                // MCQ: use robust answer comparison
+                const isCorrect = compareMCQAnswers(userAns.userAnswer, question.answer || question.answerKey);
                 if (isCorrect) score += points;
                 scoredAnswers.push({ ...userAns, isCorrect, awardedPoints: isCorrect ? points : 0 });
             }

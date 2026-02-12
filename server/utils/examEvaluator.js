@@ -31,6 +31,55 @@ const cosineSim = (aTokens, bTokens) => {
   return dotProduct(A, B) / denom;
 };
 
+/**
+ * Extracts the option letter (A/B/C/D) from various formats
+ * @param {*} answer - The answer to normalize (string or number)
+ * @returns {string|null} - Uppercase letter (A-D) or null if invalid
+ */
+export const extractOptionLetter = (answer) => {
+  if (!answer) return null;
+
+  // If it's a number (index), convert to letter (0=A, 1=B, 2=C, 3=D)
+  if (typeof answer === 'number') {
+    const letters = ['A', 'B', 'C', 'D'];
+    if (answer >= 0 && answer < 4) {
+      return letters[answer];
+    }
+    return null;
+  }
+
+  // Convert to string and extract the first letter
+  const answerStr = String(answer)
+    .trim()
+    .toUpperCase()
+    .replace(/[^A-D]/g, '');
+
+  if (answerStr.length > 0 && /^[A-D]$/.test(answerStr[0])) {
+    return answerStr[0];
+  }
+
+  return null;
+};
+
+/**
+ * Robust MCQ answer comparison
+ * Handles formats like: "C", "c", "C)", "C) Some text", index 2, etc.
+ * @param {*} userAnswer - The user's answer submission
+ * @param {*} correctAnswer - The stored correct answer
+ * @returns {boolean} - True if answers match
+ */
+export const compareMCQAnswers = (userAnswer, correctAnswer) => {
+  if (!userAnswer && !correctAnswer) return true;
+  if (!userAnswer || !correctAnswer) return false;
+
+  const userLetter = extractOptionLetter(userAnswer);
+  const correctLetter = extractOptionLetter(correctAnswer);
+
+  if (!userLetter || !correctLetter) return false;
+
+  return userLetter === correctLetter;
+};
+
 export const evaluateAnswer = (answerText, pdfText) => {
   const answerTokens = tokenize(answerText).slice(0, 500);
   const pdfTokens = tokenize(pdfText).slice(0, 5000);
@@ -56,4 +105,4 @@ export const evaluateAnswer = (answerText, pdfText) => {
   return { score, similarity, feedback, suggestions };
 };
 
-export default { evaluateAnswer };
+export default { evaluateAnswer, compareMCQAnswers, extractOptionLetter };
